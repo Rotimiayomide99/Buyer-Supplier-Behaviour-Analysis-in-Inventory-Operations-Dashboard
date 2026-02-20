@@ -58,4 +58,5 @@ SELECT
     CAST(SUM(TotalCost) AS DECIMAL(10,2)) AS MonthlySpend
 FROM dbo.spend_analysis
 GROUP BY YEAR(PurchaseDate), MONTH(PurchaseDate)
+
 ORDER BY YEAR(PurchaseDate), MONTH(PurchaseDate);   
